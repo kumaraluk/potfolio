@@ -1,0 +1,26 @@
+.floating-nav {
+  position: fixed;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  background: var(--bg2);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 90;
+
+  a {
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    transition: 0.2s;
+    &:hover { background: var(--accent); color: #000; }
+  }
+}
+
+@media (max-width: 900px) {
+  .floating-nav { display: none; }
+}

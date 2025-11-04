@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --accent: #ff0080;
+  --accent-2: #ff66cc;
+  --bg1: #1a1a2e;
+  --bg2: #0f0f1f;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #1a1a2e, #0f0f1f, #1a0033);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+/* make it responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+/* small utility */
+a { color: inherit; }

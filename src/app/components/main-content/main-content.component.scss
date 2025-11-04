@@ -1,0 +1,52 @@
+.main-content {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 20px 32px;
+  backdrop-filter: blur(6px);
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+section h1 {
+  color: var(--accent-2);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a2e;
+  border-radius: 10px;
+  padding: 18px;
+  transition: 0.25s;
+  border: 1px solid rgba(255,255,255,0.04);
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+  }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: var(--accent);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #000;
+}
